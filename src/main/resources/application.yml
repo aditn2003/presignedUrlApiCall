@@ -1,8 +1,8 @@
 cloud:
   aws:
     credentials:
-      access-key: ASIA2UC3FGMKYS6Z4NYP
-      secret-key: KZhlHRUSWguWs89TefAi44M2kWt7hvl+zM0XfAT3
+      access-key: **********
+      secret-key: **********
     region:
       static: us-east-1
     stack:
@@ -10,7 +10,7 @@ cloud:
 
 application:
   bucket:
-    name: assets-dev-glu
+    name: *********
 
 
 spring:
