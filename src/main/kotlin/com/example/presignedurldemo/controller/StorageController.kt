@@ -13,6 +13,11 @@ import software.amazon.awssdk.services.s3.presigner.S3Presigner
     private val storageService: StorageService,
     private val s3Presigner: S3Presigner
 ) {
+    @Operation(
+        operationId = "GENERATE_PRESIGNED_UPLOAD_URL",
+        summary = "Generate a presigned upload URL to upload large files directly to S3 storage bucket"
+    )
+    
     @GetMapping("/gpurl")
     fun generatePresignedUrl(
         @RequestParam bucketName: String,
