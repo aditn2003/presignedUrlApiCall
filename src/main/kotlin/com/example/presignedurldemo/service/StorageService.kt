@@ -1,15 +1,14 @@
 package com.example.presignedurldemo.service
 
+import java.net.URL
+import kotlin.time.Duration.Companion.hours
+import kotlin.time.toJavaDuration
 import org.springframework.stereotype.Service
 import software.amazon.awssdk.services.s3.model.PutObjectRequest
 import software.amazon.awssdk.services.s3.presigner.S3Presigner
 import software.amazon.awssdk.services.s3.presigner.model.PutObjectPresignRequest
-import java.net.URL
-import kotlin.time.Duration.Companion.hours
-import kotlin.time.toJavaDuration
 
-@Service
-class StorageService {
+@Service class StorageService {
 
     fun presignedUrl(s3Presigner: S3Presigner,
                      bucketName: String,
