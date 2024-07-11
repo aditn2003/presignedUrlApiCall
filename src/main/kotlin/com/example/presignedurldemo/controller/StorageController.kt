@@ -23,7 +23,7 @@ import software.amazon.awssdk.services.s3.presigner.S3Presigner
         @RequestParam bucketName: String,
         @RequestParam keyName: String,
     ): URL {
-        val url: URL = storageService.presignedUrl(s3Presigner, bucketName, keyName)
+        val url: URL = storageService.presignedPutUrl(s3Presigner, bucketName, keyName)
         return url
     }
 }
