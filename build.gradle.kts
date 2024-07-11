@@ -29,7 +29,8 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("software.amazon.awssdk:s3:2.20.48")
     implementation("software.amazon.awssdk:bom:2.20.48")
-
+    implementation("org.springdoc:springdoc-openapi-ui:1.6.4") 
+    implementation("org.springdoc:springdoc-openapi-webflux-ui:1.6.4") 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
