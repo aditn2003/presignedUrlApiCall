@@ -22,4 +22,22 @@ class AppConfig {
             .region(Region.US_EAST_1)
             .build()
     }
+    
+    @Bean
+    fun api(): Docket {
+        return Docket(DocumentationType.SWAGGER_2)
+            .select()
+            .apis(RequestHandlerSelectors.basePackage("com.example.presignedurldemo.controller"))
+            .paths(PathSelectors.any())
+            .build()
+            .apiInfo(apiInfo())
+    }
+
+    private fun apiInfo(): ApiInfo {
+        return ApiInfoBuilder()
+            .title("Presigned URL Demo API Documentation")
+            .description("API documentation for generating and using presigned URLs for S3 operations")
+            .version("1.0")
+            .build()
+    }
 }
