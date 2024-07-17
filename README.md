@@ -26,6 +26,25 @@ A URL string that can be used to upload a file to the specified S3 bucket.
 - **AWS Credentials**: Ensure your AWS credentials are correctly configured and accessible.
 - **Region Configuration**: Ensure the AWS region is specified correctly in both the application properties and the configuration class.
 
+## Swagger UI Integration
+
+Swagger UI provides a user-friendly interface for exploring and testing your API endpoints. This project includes Swagger UI to make it easier to understand and interact with the API.
+
+### Accessing Swagger UI
+Once the application is running, you can access the Swagger UI at: 
+```bash
+http://localhost:8080/swagger-ui.html
+```
+
+### Usage
+Swagger UI allows you to:
+
+• View the list of available endpoints
+
+• See detailed information about each endpoint
+
+• Test the endpoints by providing the required parameters directly in the UI
+
 ## Project Structure
 
 - **src/main/kotlin**: Contains the Kotlin source files.
